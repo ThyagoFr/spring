@@ -1,0 +1,11 @@
+eureka:
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka
+server:
+  port: 8000
+spring:
+  application:
+    name: discovery-ws

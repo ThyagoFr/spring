@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="curriculum-microservice" />
+        <module name="gateway-microservice" />
+        <module name="discovery-microservice" />
+        <module name="user-microservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="curriculum-microservice" target="1.8" />
+      <module name="discovery-microservice" target="1.8" />
+      <module name="gateway-microservice" target="1.8" />
+      <module name="user-microservice" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="curriculum-microservice" options="-parameters" />
+      <module name="discovery-microservice" options="-parameters" />
+      <module name="gateway-microservice" options="-parameters" />
+      <module name="user-microservice" options="-parameters" />
+    </option>
+  </component>
+</project>

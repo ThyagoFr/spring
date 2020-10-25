@@ -1,0 +1,33 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://@localhost:8000/eureka
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: user-ws
+  datasource:
+    password: 392035
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/insight_user
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+    show-sql: false
+  flyway:
+    baseline-on-migrate: true
+    baselineDescription: Base Migration
+    baselineVersion: 1.0.0
+    enabled: false
+    locations: classpath:/db/migration
+    password: 392035
+    schemas: public
+    table: schema_history_flyway
+    url: jdbc:postgresql://localhost:5432/insight_user
+    user: postgres
+
+
